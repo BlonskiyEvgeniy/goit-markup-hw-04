@@ -299,6 +299,26 @@ address {
   overflow: hidden;
 }
 
+.features-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.features-icon-item {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F4FA;
+}
+
+.features-icon-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+
 /* Чем мы занимаемся */
 
 .section-title-team {
