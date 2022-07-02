@@ -312,6 +312,7 @@ address {
   justify-content: center;
   align-items: center;
   background-color: #F5F4FA;
+  fill: var(--tittle-text-color);
 }
 
 .features-icon-item:not(:last-child) {
