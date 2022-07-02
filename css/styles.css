@@ -387,6 +387,16 @@ address {
   text-align: center;
 }
 
+.socil-networks {
+  display: flex;
+
+}
+
+.social-networks-item {
+ margin-right: 50px;
+
+}
+
 /* Footer */
 
 footer {
