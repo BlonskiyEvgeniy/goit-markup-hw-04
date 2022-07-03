@@ -190,6 +190,7 @@ address {
   letter-spacing: 0.02em;
   font-style: normal;
   fill: var(--tittle-text-color);
+
 }
 
 .contact-link:hover {
@@ -402,8 +403,8 @@ address {
 }
 
 .social-networks-item {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .social-link {
@@ -516,23 +517,41 @@ footer {
 }
 
 .footer-links {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-wh-color);
   margin-bottom: 20px;
 }
 
 .social-link-footer {
-  display: block;
-  text-align: center;
-  margin-right: 70px;
+  display:block;
+  /* text-align: center; */
+  /* margin-right: 70px; */
   width: 206px;
   margin-top: 12px;
 }
+
+.social-link-item {
+  display: flex;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px 12px;
+}
+
+.social-link-svg {
+  fill: var(--primary-wh-color);
+}
+
+.social-link-item:hover, 
+.social-link-item:focus {
+  background-color: var(--accent-color);
+}
+
+
+
+
 
 /* ПОРТФОЛИО */
 
