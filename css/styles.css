@@ -444,6 +444,7 @@ address {
 
 .clients-list {
   display: flex;
+
 }
 
 .clients-link {
@@ -453,12 +454,28 @@ address {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
-  height: 92px;
+  height: 92px;  
 }
 
 .clients-link:not(:last-child) {
   margin-right: 30px;
 }
+
+.client-link:focus .client-link-icon,
+.client-link:hover .client-link-icon {
+  fill: var(--primary-wh-color);
+}
+
+.client-logo {
+  fill: var(--tittle-text-color)
+}
+
+.client-link:hover,
+.clietn-link:focus {
+  background-color: var(--accent-color);
+  /* border-radius: 50%; */
+}
+
 
 /* Footer */
 
@@ -503,6 +520,8 @@ footer {
 
 .social-link-footer {
   display: flex;
+  text-align: center;
+  margin-right: 70px;
   width: 206px;
 }
 
