@@ -502,9 +502,17 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-contacts {
+  margin-right: 70px;
+}
+
 .contact-footer:hover,
 :focus {
   color: var(--accent-color);
+}
+
+.footer-flex {
+  display: flex;
 }
 
 .footer-links {
@@ -519,7 +527,7 @@ footer {
 }
 
 .social-link-footer {
-  display: flex;
+  display: block;
   text-align: center;
   margin-right: 70px;
   width: 206px;
