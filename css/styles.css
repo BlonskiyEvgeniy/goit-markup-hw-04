@@ -190,19 +190,23 @@ address {
   letter-spacing: 0.02em;
   font-style: normal;
   fill: var(--tittle-text-color)
-
 }
 
-.contact-link:hover,
-:focus {
+.contact-link:hover{
   color: var(--accent-color);
+}
+
+.contact-link:hover .nav-li-item
+{
+  fill: var(--accent-color);
 }
 
 .nav-li-item {
   width: 16px;
   height: 12px;
-
 }
+
+
 
 /* main */
 .main-title {
@@ -397,8 +401,8 @@ address {
 .social-networks {
   display: flex;
   width: 206px;
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social-networks-item {
@@ -409,6 +413,10 @@ address {
 .social-link {
   fill: var(--tittle-text-color);
   padding: 12px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 
@@ -416,6 +424,8 @@ address {
 .social-link:hover .social-link-icon {
   fill: var(--primary-wh-color);
 }
+
+
 
 .social-link:hover,
 .social-link:focus {
