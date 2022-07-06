@@ -453,11 +453,11 @@ address {
 }
 
 
-.clients-link:not(:last-child) {
+.client-item:not(:last-child):not(:last-child) {
   margin-right: 30px;
 }
 
-.client-logo {
+.client-icon {
   fill: #AFB1B8;
 }
 
@@ -465,7 +465,7 @@ address {
   border: 1px solid var(--accent-color);
   }
 /* при ховере и фокусе на ссылку классу "клиент лого (иконка)" - дать иконке нужный филл  */
-.client-link:hover .client-logo, .client-link:focus .client-logo  {
+.client-link:hover .client-icon, .client-link:focus .client-icon  {
   fill: var(--accent-color);
 }
 
