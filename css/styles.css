@@ -156,12 +156,6 @@ address {
   display: flex;
 }
 
-.icon-contact {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .header-icon {
   margin-right: 10px;
 }
@@ -191,22 +185,19 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
-  fill: var(--tittle-text-color);
-
 }
 
-.contact-link:hover {
+.contact-link:hover, .contact-link:focus {
   color: var(--accent-color);
 }
 
-.contact-link:hover .nav-li-item {
+.contact-link:hover .nav-li-item, .contact-link:focus .nav-li-item {
   fill: var(--accent-color);
 }
 
 .nav-li-item {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
+  fill: var(--tittle-text-color);
 }
 
 /* main */
@@ -316,18 +307,15 @@ address {
   margin-bottom: 30px;
 }
 
-.features-icon-item:not(:last-child) {
-  margin-right: 30px;
-}
 
 .features-icon-wrapper {
   display: flex;
-  width: 270px;
-  height: 120px;
   justify-content: center;
   align-items: center;
+  height: 120px;
   background-color: #f5f4fa;
-  fill: var(--tittle-text-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 /* Чем мы занимаемся */
@@ -385,11 +373,11 @@ address {
   line-height: 1.18;
   text-align: center;
   color: var(--tittle-text-color);
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 
 .team-wrapper {
-  padding: 30px;
+  padding: 32px;
 }
 
 .social-icon {
@@ -400,9 +388,6 @@ address {
 
 .social-networks {
   display: flex;
-  
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .social-networks-item {
@@ -418,8 +403,9 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
 }
+
+/* Focus & Hover (при ховере на ссылке - дать иконке белый цвет */
 
 .social-link:focus .social-link-icon,
 .social-link:hover .social-link-icon {
@@ -429,14 +415,14 @@ address {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  border-radius: 50%;
+
 }
 
 .social-networks-item:not(:last-child) {
   margin-right: 10px;
 }
 
-/* Постоянные клмиенты */
+/* Постоянные клиенты */
 
 .section-titles-clients {
   text-align: center;
@@ -475,14 +461,12 @@ address {
   fill: #AFB1B8;
 }
 
-
-
-.client-link:hover {
+.client-link:hover, .client-link:focus {
   border: 1px solid var(--accent-color);
   }
-
-.client-logo:hover {
-  fill: #2196f3;
+/* при ховере и фокусе на ссылку классу "клиент лого (иконка)" - дать иконке нужный филл  */
+.client-link:hover .client-logo, .client-link:focus .client-logo  {
+  fill: var(--accent-color);
 }
 
 /* Footer */
@@ -531,10 +515,6 @@ footer {
   text-transform: uppercase;
   color: var(--primary-wh-color);
   margin-bottom: 20px;
-}
-
-.social-link-footer {
-  margin-top: 12px;
 }
 
 .social-link-item {
@@ -592,6 +572,14 @@ footer {
 
 /* Cards */
 
+.cards-link:hover, .cards-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.cards-link {
+  display: block;
+}
+
 .card-title {
   font-weight: 700;
   font-size: 18px;
@@ -612,10 +600,6 @@ footer {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-
-.card-list > li:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-} 
 
 .card-list {
   display: flex;
